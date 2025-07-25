@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>D'EMI AUTOMOTRIZ</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Iconos -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <!-- ICONOS SOCIALES -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <!-- SwiperJS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Bootstrap CSS & JS solo en index si no lo tienes aún -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <!-- HEADER solo para index.html -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/img/logo.png" alt="Logo D'EMI Automotriz" height="50" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/vehiculos.html">Vehículos</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <section class="hero" data-aos="fade-in">
+    <div class="hero-content">
+      <h1>Soluciones reales para tu vehículo</h1>
+      <p>Tecnología, confianza y experiencia mecánica a tu servicio</p>
+      <a href="pages/servicios.html" class="btn btn-primary btn-lg fw-semibold shadow-lg mt-3 px-4 py-2">
+        <i class="bi bi-tools me-2"></i> Ver Servicios
+      </a>
+
+    </div>
+  </section>
+
+  <section class="sobre-nosotros" data-aos="fade-up">
+    <h2>Sobre D'EMI Automotriz</h2>
+    <p>Somos una empresa comprometida con el mantenimiento y reparación de vehículos livianos y camionetas, brindando soluciones mecánicas integrales con respaldo profesional, tecnología moderna y atención personalizada en Huánuco.</p>
+  </section>
+
+  <section class="servicios-home" data-aos="fade-up">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios-grid">
+      <div class="servicio">
+        <iconify-icon icon="fa-solid:tools" width="40"></iconify-icon>
+        <h3>Mantenimiento Preventivo</h3>
+      </div>
+      <div class="servicio">
+        <iconify-icon icon="mdi:engine" width="40"></iconify-icon>
+        <h3>Diagnóstico de Motor</h3>
+      </div>
+      <div class="servicio">
+        <iconify-icon icon="mdi:car-brake-abs" width="40"></iconify-icon>
+        <h3>Sistema de Freno</h3>
+      </div>
+      <div class="servicio">
+        <iconify-icon icon="ic:round-support-agent" width="40"></iconify-icon>
+        <h3>Asistencia 24/7</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿Por qué elegirnos? con Swiper -->
+<section class="porque" id="porque">
+  <h2>¿Por qué elegirnos?</h2>
+  <div class="swiper porqueSwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide feature-card">
+        <img src="./assets/img/servicio-freno.jpg" alt="Reparación Profesional">
+        <h3>Reparación Profesional</h3>
+      </div>
+
+      <div class="swiper-slide feature-card">
+        <img src="./assets/img/repuestos.jpg" alt="Repuestos Garantizados">
+        <h3>Repuestos Garantizados</h3>
+      </div>
+
+      <div class="swiper-slide feature-card">
+        <img src="./assets/img/auxilio.jpg" alt="Auxilio 24/7">
+        <h3>Auxilio 24/7</h3>
+      </div>
+
+      <div class="swiper-slide feature-card">
+        <img src="./assets/img/location.jpg" alt="Servicio en Huánuco">
+        <h3>Servicio en Huánuco</h3>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+
+
+  <section class="flota" data-aos="fade-up">
+  <h2>Atención a Flotas Corporativas</h2>
+  <p class="descripcion-flota">
+    Brindamos soluciones especializadas en mantenimiento y gestión de flotas empresariales, incluyendo unidades de transporte minero, vehículos de seguridad, flotas para reparto urbano e interprovincial. Nuestro enfoque preventivo reduce tiempos de inactividad y garantiza operación eficiente.
+  </p>
+
+  <!-- Swiper carrusel de flotas -->
+  <div class="swiper flota-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../assets/img/flota-minera.jpg" alt="Flota minera" />
+        <h3>Mantenimiento de flotas mineras</h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/flota-seguridad.jpg" alt="Vehículos de seguridad" />
+        <h3>Vehículos de seguridad y patrullaje</h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/flota-distribucion.jpg" alt="Flotas urbanas" />
+        <h3>Distribución urbana y logística</h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/img/flota-prevencion.jpg" alt="Mantenimiento preventivo" />
+        <h3>Gestión de mantenimiento preventivo</h3>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+  <!-- Testimonios Slider -->
+  <section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">¿QUÉ DICEN NUESTROS CLIENTES?</h2>
+
+    <div id="testimoniosCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Testimonio 1 -->
+        <div class="carousel-item active">
+          <div class="card text-center shadow-sm p-4 rounded-4 border-0 mx-auto" style="max-width: 600px;">
+            <img src="assets/img/testimonio1.jpg" alt="Cliente 1" class="rounded-circle mx-auto mb-3" width="100">
+            <p>Capacitarme en D'EMI Automotriz fue el primer paso para recuperar la confianza en mi vehículo. Hoy estoy feliz con el servicio.</p>
+            <div class="text-warning fs-5">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="carousel-item">
+          <div class="card text-center shadow-sm p-4 rounded-4 border-0 mx-auto" style="max-width: 600px;">
+            <img src="assets/img/testimonio2.jpg" alt="Cliente 2" class="rounded-circle mx-auto mb-3" width="100">
+            <p>Servicio rápido, confiable y con gran atención al detalle. ¡Altamente recomendado!</p>
+            <div class="text-warning fs-5">★★★★☆</div>
+          </div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="carousel-item">
+          <div class="card text-center shadow-sm p-4 rounded-4 border-0 mx-auto" style="max-width: 600px;">
+            <img src="assets/img/testimonio3.jpg" alt="Cliente 3" class="rounded-circle mx-auto mb-3" width="100">
+            <p>Mi flota recibió mantenimiento completo. ¡Todo quedó operativo en menos de una semana!</p>
+            <div class="text-warning fs-5">★★★★★</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controles (Flechas) -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Galería -->
+  <section class="galeria" data-aos="fade-up">
+    <h2>Galería de nuestro trabajo</h2>
+    <div class="swiper galeria-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./assets/img/taller1.jpg" alt="Taller mecánico"></div>
+        <div class="swiper-slide"><img src="./assets/img/vehiculo-auto.jpg" alt="Vehículo atendido"></div>
+        <div class="swiper-slide"><img src="./assets/img/servicio-freno.jpg" alt="Servicio de freno"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="confianza" data-aos="fade-up">
+    <h2>Confían en nosotros</h2>
+    <div class="logos">
+      <iconify-icon icon="simple-icons:mitsubishi" width="60"></iconify-icon>
+      <iconify-icon icon="simple-icons:toyota" width="60"></iconify-icon>
+      <iconify-icon icon="simple-icons:ford" width="60"></iconify-icon>
+    </div>
+  </section>
+
+  <section class="cta" data-aos="zoom-in">
+    <h2>¿Listo para poner tu vehículo en manos expertas?</h2>
+    <a href="pages/contacto.html" class="btn">Contáctanos ahora</a>
+  </section>
+
+  <section class="mapa-contacto" data-aos="fade-up">
+  <h2>¿Dónde estamos ubicados?</h2>
+  <p style="margin-bottom: 1rem;">Visítanos en nuestra tienda física en Huánuco. Estamos ubicados en una zona de fácil acceso.</p>
+  <div class="mapa-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3929.8636402629318!2d-76.26830822496956!3d-9.945301690157324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwNTYnNDMuMSJTIDc2wrAxNSc1Ni42Ilc!5e0!3m2!1ses!2spe!4v1753222728984!5m2!1ses!2spe" 
+      width="100%" 
+      height="350" 
+      style="border:0; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+  <!-- FOOTER solo para index.html -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p class="mb-1">&copy; 2025 D'EMI AUTOMOTRIZ - Corporación Automotriz EMI EIRL</p>
+    <p class="mb-0">Desarrollado por <strong>Tu nombre o equipo</strong></p>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    AOS.init();
+
+    const testimonialSwiper = new Swiper('.testimonial-swiper', {
+      loop: true,
+      pagination: { el: '.testimonial-swiper .swiper-pagination', clickable: true },
+      autoplay: { delay: 5000 },
+    });
+
+    const galeriaSwiper = new Swiper('.galeria-swiper', {
+      loop: true,
+      pagination: { el: '.galeria-swiper .swiper-pagination', clickable: true },
+      autoplay: { delay: 4000 },
+      slidesPerView: 1,
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
+  </script>
+  <!-- SwiperJS (CDN) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".porqueSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      1280: {
+        slidesPerView: 4,
+      }
+    }
+  });
+</script>
+<script>
+  const flotaSwiper = new Swiper('.flota-swiper', {
+    loop: true,
+    pagination: {
+      el: '.flota-swiper .swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 4000,
+    },
+    slidesPerView: 1,
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+</script>
+<!-- Botones flotantes -->
+<div class="floating-buttons">
+  <a href="https://wa.me/51987654321" class="btn-floating bg-success text-white" target="_blank" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <a href="https://www.facebook.com/tupagina" class="btn-floating bg-primary text-white" target="_blank" aria-label="Facebook">
+    <i class="bi bi-facebook"></i>
+  </a>
+</div>
+
+
+
+</body>
+</html>

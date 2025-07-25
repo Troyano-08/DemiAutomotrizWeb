@@ -1,0 +1,377 @@
+
+/* === Reset & Fuente === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+/* === Navbar === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1e90ff;
+}
+
+/* === Hero Section === */
+.hero {
+  position: relative;
+  background: url('../img/banner.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* === Sobre Nosotros === */
+.sobre-nosotros {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.sobre-nosotros h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* === Servicios === */
+.servicios-home {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.servicio h3 {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+/* === ¿Por qué elegirnos? === */
+.porque {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.porque h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.feature-card img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+ 
+
+/* === Flota === */
+.flota {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.flota-swiper .swiper-slide {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 1rem;
+  text-align: center;
+}
+
+.flota-swiper .swiper-slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.flota-swiper .swiper-slide h3 {
+  font-size: 1.1rem;
+  color: #800000;
+  font-weight: 600;
+}
+
+.descripcion-flota {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+/* === Testimonios Swiper === */
+.testimonios {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.testimonios blockquote {
+  font-style: italic;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.swiper-pagination {
+  margin-top: 1rem;
+}
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* === Galería === */
+.galeria {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* === Confían en nosotros === */
+.confianza {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* === CTA === */
+.cta {
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem; /* separación del botón */
+}
+
+.cta .btn {
+  background-color: white;
+  color: #007BFF;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+  display: inline-block;
+}
+
+.cta .btn:hover {
+  background-color: #e6e6e6;
+  transform: scale(1.05);
+}
+
+
+/* === Mapa === */
+.mapa-contacto {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+.mapa-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+
+/* === WhatsApp Floating Button === */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-floating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  font-size: 24px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-floating:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+
+/* === Footer === */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+
+.servicio-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.servicio-hover:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Botón de WhatsApp en Servicios */
+.whatsapp-btn {
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #25D366;
+  color: white;
+  border-color: #25D366;
+}
+.vehiculo-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.vehiculo-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+

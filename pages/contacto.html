@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | D'EMI AUTOMOTRIZ</title>
+  <meta name="description" content="Contáctanos para solicitar servicios, repuestos o auxilio técnico 24/7. Estamos en Huánuco, Perú.">
+
+  <!-- Google Fonts y Bootstrap -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <!-- Estilos personalizados -->
+  
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+  
+
+  <!-- CONTACTO -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h1 class="text-center text-primary fw-bold mb-4">Contáctanos</h1>
+
+      <div class="row g-5">
+        <!-- FORMULARIO -->
+        <div class="col-md-6">
+          <form action="https://formsubmit.co/TUCORREO@ejemplo.com" method="POST" class="bg-white p-4 shadow rounded">
+            <div class="mb-3">
+              <label for="nombre" class="form-label"><i class="bi bi-person-fill"></i>Nombre completo</label>
+              <input type="text" name="nombre" id="nombre" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="correo" class="form-label"><i class="bi bi-envelope-fill"></i>Correo electrónico</label>
+              <input type="email" name="correo" id="correo" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label"><i class="bi bi-telephone-fill"></i>Teléfono</label>
+              <input type="tel" name="telefono" id="telefono" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label"><i class="bi bi-chat-left-dots-fill"></i>Mensaje</label>
+              <textarea name="mensaje" id="mensaje" rows="4" class="form-control" required></textarea>
+            </div>
+
+            <!-- Protección FormSubmit -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://tu-dominio.com/gracias.html">
+
+            <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+
+            <div class="text-center mt-3">
+              <p class="mb-2">¿Prefieres usar WhatsApp?</p>
+              <a href="https://wa.me/51XXXXXXXXX" class="btn btn-success w-100"><i class="bi bi-whatsapp"></i> Contactar por WhatsApp</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- INFORMACIÓN Y MAPA -->
+        <div class="col-md-6">
+          <div class="info-box">
+            <h5><i class="bi bi-geo-alt-fill"></i> Dirección</h5>
+            <p>Av. Principal #123, Huánuco - Perú</p>
+
+            <h5 class="mt-4"><i class="bi bi-clock-fill"></i> Horario de atención</h5>
+            <p>Lunes a Sábado: 8:00 a.m. - 6:00 p.m.<br>Emergencias 24/7</p>
+
+            <h5 class="mt-4"><i class="bi bi-telephone-fill"></i> Teléfono</h5>
+            <p>+51 912 345 678</p>
+
+            <div class="ratio ratio-16x9 mt-4">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3929.8636402629318!2d-76.26830822496956!3d-9.945301690157324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwNTYnNDMuMSJTIDc2wrAxNSc1Ni42Ilc!5e0!3m2!1ses!2spe!4v1753222728984!5m2!1ses!2spe" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+
+  <!-- Scripts -->
+   <script src="../assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Botones flotantes -->
+<div class="floating-buttons">
+  <a href="https://wa.me/51987654321" class="btn-floating bg-success text-white" target="_blank" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <a href="https://www.facebook.com/tupagina" class="btn-floating bg-primary text-white" target="_blank" aria-label="Facebook">
+    <i class="bi bi-facebook"></i>
+  </a>
+</div>
+
+</body>
+</html>

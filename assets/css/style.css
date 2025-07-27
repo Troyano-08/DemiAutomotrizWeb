@@ -1,170 +1,312 @@
+/* === NAVBAR GENERAL === */
+.bg-navbar {
+  background-color: #0A192F;
+}
 
-/* === Reset & Fuente === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.navbar {
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #222;
-}
-
-/* === Navbar === */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #111;
-}
-
-.logo {
-  height: 50px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
+.navbar-brand span {
+  color: #ffffff;
+  font-size: 1.2rem;
   font-weight: 600;
-  transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  color: #1e90ff;
-}
-
-/* === Hero Section === */
-.hero {
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
   position: relative;
-  background: url('../img/banner.jpg') center/cover no-repeat;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+/* Línea animada al pasar mouse */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #e63946;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e63946;
+}
+
+.navbar-nav .nav-link.active {
+  color: #e63946 !important;
+  font-weight: 600;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+  background-color: transparent;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #0A192F;
+    border-radius: 0 0 0.75rem 0.75rem;
+    padding: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    display: block;
+  }
+}
+
+/* ========================================
+   SECCIÓN HERO: Presentación Principal
+   Identidad visual: Colores + Tipografía Poppins
+======================================== */
+
+.hero {
+  background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('../img/banner.jpg') center/cover no-repeat;
+  padding: 120px 20px;
   text-align: center;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
+  margin-bottom: 20px;
+  color: #FFFFFF; /* blanco puro */
 }
 
 .hero-content p {
   font-size: 1.2rem;
-  margin: 1rem 0;
+  font-weight: 400;
+  color: #F1F1F1; /* gris claro */
+  margin-bottom: 30px;
 }
 
-.btn {
-  padding: 0.8rem 1.5rem;
-  background-color: #007BFF;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+/* Botón personalizado */
+.btn-servicio {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #c20a26; /* azul profesional */
+  color: #fff;
   font-weight: 600;
-  transition: background 0.3s;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.btn:hover {
-  background-color: #0056b3;
+.btn-servicio:hover {
+  background-color: #004182; /* azul oscuro */
+  color: #fff;
 }
+/* ========================================
+   SECCIÓN SOBRE NOSOTROS
+   Descripción institucional destacada
+   Tipografía y colores corporativos
+======================================== */
 
-
-/* === Sobre Nosotros === */
 .sobre-nosotros {
-  padding: 4rem 2rem;
-  background-color: #fff;
+  padding: 80px 20px;
   text-align: center;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
 }
 
 .sobre-nosotros h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0A192F; /* Azul corporativo oscuro */
+  margin-bottom: 25px;
 }
 
-/* === Servicios === */
+.sobre-nosotros p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #2E2E2E; /* Gris oscuro para buena lectura */
+  font-weight: 400;
+  line-height: 1.6;
+}
+/* ========================================
+   SECCIÓN NUESTROS SERVICIOS
+   Grid de servicios destacados
+   Iconos y títulos estilizados
+======================================== */
+
 .servicios-home {
-  padding: 4rem 2rem;
-  background-color: #f8f9fa;
+  padding: 80px 20px;
+  background-color: #ffffff;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.servicios-home h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0A192F; /* Azul corporativo oscuro */
+  margin-bottom: 40px;
 }
 
 .servicios-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.servicio {
+  background-color: #F8F9FA; /* Fondo suave para contraste */
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+}
+
+.servicio iconify-icon {
+  margin-bottom: 15px;
+  color: #0A192F;
 }
 
 .servicio h3 {
-  margin-top: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
+  color: #0A192F;
 }
+/* ================================
+   ¿Por qué elegirnos? Interactivo
+================================ */
 
-/* === ¿Por qué elegirnos? === */
 .porque {
-  padding: 4rem 2rem;
+  padding: 80px 20px;
   background-color: #f8f9fa;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .porque h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: #111;
+  color: #0A192F;
+  margin-bottom: 40px;
 }
 
+/* Tarjetas */
 .feature-card {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 1rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
+  transition: all 0.4s ease;
   text-align: center;
-}
-
-.feature-card img {
-  width: 100%;
-  max-height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.feature-card h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #333;
+  position: relative;
+  overflow: hidden;
 }
 
 .feature-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(230, 57, 70, 0.3);
 }
- 
 
-/* === Flota === */
+/* Emoji o ícono superior */
+.icon-container {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s infinite;
+}
+
+/* Título */
+.feature-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0A192F;
+}
+
+/* Descripción */
+.feature-card .descripcion {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #2E2E2E;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+.feature-card:hover .descripcion {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animación suave */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+/* ================================
+   Sección: Flota Corporativa
+================================ */
 .flota {
-  padding: 4rem 2rem;
+  padding: 80px 20px;
   background-color: #f9f9f9;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
+
+.flota h2 {
+  font-size: 2.2rem;
+  color: #0A192F;
+  margin-bottom: 20px;
+}
+
+.descripcion-flota {
+  max-width: 850px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  color: #2E2E2E;
+  line-height: 1.6;
+}
+
+/* Carrusel Swiper */
 .flota-swiper .swiper-slide {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   padding: 1rem;
-  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.flota-swiper .swiper-slide:hover {
+  transform: scale(1.02);
 }
 
 .flota-swiper .swiper-slide img {
@@ -175,202 +317,764 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Títulos debajo de cada imagen */
 .flota-swiper .swiper-slide h3 {
   font-size: 1.1rem;
-  color: #800000;
   font-weight: 600;
+  color: #0f0d48;
+  margin-top: 10px;
 }
 
-.descripcion-flota {
-  max-width: 800px;
-  margin: 0 auto 2rem;
-  color: #333;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-
-/* === Testimonios Swiper === */
-.testimonios {
-  padding: 4rem 2rem;
-  background-color: #fff;
-  text-align: center;
-}
-
-.testimonios blockquote {
-  font-style: italic;
-  margin: 1rem auto;
-  max-width: 600px;
-}
-
+/* Paginación Swiper */
 .swiper-pagination {
-  margin-top: 1rem;
+  margin-top: 20px;
 }
-.card {
-  background-color: #fff;
-  border-radius: 1rem;
+/* ================================
+   Sección: Testimonios
+================================ */
+.testimonios h2 {
+  color: #0A192F;
+  font-size: 2rem;
+}
+
+.card-testimonio {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
   transition: transform 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.card-testimonio:hover {
+  transform: scale(1.01);
 }
 
-.card img {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-
-/* === Galería === */
-.galeria {
-  padding: 4rem 2rem;
-  background-color: #f8f9fa;
-  text-align: center;
-}
-
-.galeria img {
-  width: 100%;
-  border-radius: 10px;
-  height: 200px;
+.foto-cliente {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
 }
 
-/* === Confían en nosotros === */
+.card-testimonio p {
+  color: #2E2E2E;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.estrellas {
+  color: #ffc107;
+  font-size: 1.3rem;
+}
+/* ================================
+   Sección: Galería de nuestro trabajo
+================================ */
+.galeria {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+
+.titulo-seccion {
+  color: #0A192F;
+  font-size: 2.2rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2.5rem;
+}
+
+/* ================================
+   Estilos para imágenes de Galería
+================================ */
+.galeria-img {
+  position: relative;
+  width: 100%;
+  height: 250px; /* Altura fija para uniformidad */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.galeria-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene proporción visual sin deformar */
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.galeria-img:hover {
+  transform: scale(1.03);
+}
+
+.galeria-img:hover img {
+  transform: scale(1.1);
+}
+/* ============================
+   Sección: Confían en Nosotros (Swiper)
+============================ */
 .confianza {
-  padding: 4rem 2rem;
-  background-color: #fff;
+  background-color: #f9f9f9;
+  padding: 60px 20px;
   text-align: center;
 }
 
-.logos {
+.confianza h2 {
+  color: #0A192F;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.confianza-swiper .swiper-slide {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  align-items: center;
 }
 
-/* === CTA === */
+.logo-icon {
+  font-size: 80px;
+  color: #0A192F;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo-icon:hover {
+  transform: scale(1.0);
+  color: #E63946;
+}
+/* ============================
+   Sección CTA - Llamado a la acción
+============================ */
 .cta {
-  background-color: #007BFF;
-  color: white;
+  background: linear-gradient(120deg, #0A192F, #1E2A47);
+  color: #ffffff;
+  padding: 60px 20px;
   text-align: center;
-  padding: 4rem 2rem;
+  border-radius: 16px;
+  margin: 50px auto;
+  max-width: 1000px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .cta h2 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 2rem; /* separación del botón */
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
 }
 
-.cta .btn {
-  background-color: white;
-  color: #007BFF;
+.btn-cta {
+  background-color: #E63946;
+  color: #ffffff;
+  padding: 14px 32px;
+  font-size: 1rem;
   font-weight: 600;
-  padding: 1rem 2rem;
-  border-radius: 8px;
+  border-radius: 30px;
   text-decoration: none;
-  transition: background 0.3s, transform 0.2s;
-  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.cta .btn:hover {
-  background-color: #e6e6e6;
+.btn-cta:hover {
+  background-color: #d12737;
   transform: scale(1.05);
 }
-
-
-/* === Mapa === */
+/* ==============================
+   Sección Mapa de Ubicación
+============================== */
 .mapa-contacto {
-  padding: 4rem 2rem;
+  padding: 60px 20px;
+  background-color: #F9F9F9;
   text-align: center;
-  background-color: #f8f9fa;
+  margin-bottom: 0; /* Eliminado el espacio que causaba separación excesiva */
+  border: none;     /* Asegura que no haya bordes visibles */
 }
-.mapa-container {
+
+.mapa-contacto h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #0A192F;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.descripcion-ubicacion {
+  font-size: 1rem;
+  color: #2E2E2E;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+.mapa-container iframe {
+  width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 12px;
+  height: 350px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
-/* === WhatsApp Floating Button === */
-.floating-buttons {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1050;
+/* ====== FOOTER ====== */
+
+/* === Pie de página Consolidado === */
+footer {
+  background-color: #0A192F; /* Fondo azul oscuro */
+  color: #F1F1F1; /* Texto claro */
+  padding: 3rem 1rem 2rem 1rem;
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  border-top: 4px solid #E63946; /* Línea superior destacada */
+  margin: 0;
+  width: 100%;
+}
+
+footer .container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.btn-floating {
-  display: flex;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
-  width: 52px;
-  height: 52px;
-  font-size: 24px;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #E63946;
+  text-decoration: underline;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+footer .social-icons a {
+  color: #fff;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #E63946;
+  transform: scale(1.1);
+}
+
+footer .credits {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer .credits a {
+  color: #E63946;
   text-decoration: none;
 }
 
-.btn-floating:hover {
-  transform: scale(1.1);
-  opacity: 0.9;
+footer .credits a:hover {
+  text-decoration: underline;
 }
 
 
-/* === Footer === */
-footer {
-  background-color: #111;
-  color: #fff;
+
+
+
+
+/* =============================
+   Sección: Sobre Nosotros
+============================= */
+/* ============================
+   Colores corporativos y fuente
+   ============================ */
+/* ========== COLORES BASE ========== */
+:root {
+  --azul-oscuro: #0A192F;
+  --gris-oscuro: #2E2E2E;
+  --rojo-acento: #E63946;
+  --gris-claro: #f1f1f1;
+  --fuente-principal: 'Poppins', sans-serif;
+}
+
+/* ========== RESET GENERAL ========== */
+
+
+/* ========== SECCIÓN INTRO (Frase Institucional) ========== */
+.intro-nosotros {
+  background-color: var(--azul-oscuro);
+  padding: 3rem 1rem;
   text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  letter-spacing: 0.3px;
 }
 
-footer p {
-  margin: 0.3rem 0;
+.frase-institucional {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
 }
 
+/* ========== TÍTULOS Y TEXTOS GENERALES ========== */
+.titulo-nosotros {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--azul-oscuro);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 
+.subtitulo-nosotros {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--azul-oscuro);
+  margin-bottom: 1rem;
+}
+
+.descripcion-nosotros,
+.texto-nosotros {
+  font-size: 1.1rem;
+  color: var(--gris-oscuro);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ========== SECCIÓN DE VALORES (LISTA) ========== */
+.valores-nosotros {
+  font-size: 1.1rem;
+  color: var(--gris-oscuro);
+  padding-left: 1.2rem;
+}
+
+.valores-nosotros li {
+  margin-bottom: 0.5rem;
+}
+
+/* ========== HOVER SERVICIOS ========= */
 .servicio-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 12px;
 }
 
 .servicio-hover:hover {
   transform: scale(1.02);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
 }
 
-/* Botón de WhatsApp en Servicios */
-.whatsapp-btn {
+/* ========== SECCIÓN HISTORIA / LÍNEA DE TIEMPO ========== */
+.historia {
+  background-color: #fff;
+  padding: 4rem 1rem;
+}
+
+.historia .titulo-nosotros {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--azul-oscuro);
+}
+
+.linea-tiempo {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-left: 1rem;
+  border-left: 4px solid var(--azul-oscuro);
+}
+
+.evento {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.evento:hover {
+  transform: translateX(10px);
+}
+
+.icono-evento {
+  font-size: 1.5rem;
+  color: var(--azul-oscuro);
+  margin-top: 5px;
+}
+
+.año {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--azul-oscuro);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.evento p {
+  font-size: 1.05rem;
+  color: var(--gris-oscuro);
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .linea-tiempo {
+    padding-left: 0.5rem;
+    border-left: 3px solid var(--azul-oscuro);
+  }
+
+  .evento {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icono-evento {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+
+/* ========== SECCIÓN IMPACTO ========== */
+.impacto-local {
+  padding: 5rem 1rem;
+  background-color: #f5f6f8;
+}
+
+.icono-impacto {
+  display: flex;
+  justify-content: center;
+}
+
+.img-icono {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border: 2px solid var(--azul-oscuro);
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.img-icono:hover {
+  transform: scale(1.1);
+}
+
+.impacto-local .titulo-nosotros {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--azul-oscuro);
+}
+
+.impacto-local .descripcion-nosotros {
+  font-size: 1.1rem;
+  color: var(--gris-oscuro);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+.tarjeta-impacto {
+  background-color: #ffffff;
+  border: 2px solid #e3e3e3;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.tarjeta-impacto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.icono-tarjeta {
+  font-size: 2.5rem;
+  color: var(--azul-oscuro);
+  margin-bottom: 0.5rem;
+}
+
+.numero-impacto {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--azul-oscuro);
+  margin-bottom: 0.25rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.texto-impacto {
   font-size: 1rem;
-  padding: 0.7rem 1.5rem;
-  border-radius: 8px;
+  color: var(--gris-oscuro);
+  margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/* ====== SECCIÓN SERVICIOS INTRO ====== */
+.servicios-intro {
+  padding: 4rem 0;
+  background-color: #f8f9fa; /* tono claro coherente */
+}
+
+.titulo-seccion {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0A192F;
+  margin-bottom: 1rem;
+}
+
+.subtitulo-seccion {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #2E2E2E;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+/* ====== SERVICIOS DETALLE ====== */
+/* ======= SERVICIOS DETALLADOS ======= */
+.servicio-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.servicio-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.servicio-hover h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0A192F;
+  margin-bottom: 1rem;
+}
+
+.servicio-hover p,
+.servicio-hover li {
+  font-family: 'Poppins', sans-serif;
+  color: #2E2E2E;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.servicio-hover ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+
+/* =============================
+   ESTILOS GENERALES VEHÍCULOS
+   ============================= */
+.seccion-vehiculos {
+  background-color: #f5f5f5;
+}
+
+.titulo-vehiculos {
+  color: #0A192F;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700; /* 👈 ESTO LE DA EL GROSOR VISUAL CORRECTO */
+}
+
+
+.descripcion-vehiculos {
+  font-family: 'Inter', sans-serif;
+  color: #2E2E2E;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.bloque-vehiculo {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.bloque-vehiculo:hover {
+  transform: translateY(-5px);
+}
+
+.bloque-vehiculo h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #0A192F;
+}
+
+.bloque-vehiculo p {
+  font-family: 'Inter', sans-serif;
+  color: #2E2E2E;
+}
+
+
+
+
+/* =============================
+   BOTÓN WHATSAPP ESTILO UNIFICADO
+   ============================= */
+.whatsapp-btn {
+  border: 2px solid #DC3545; /* rojo institucional */
+  color: #DC3545;
+  background-color: transparent;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
   transition: all 0.3s ease;
 }
 
 .whatsapp-btn:hover {
-  background-color: #25D366;
+  background-color: #0A192F; /* azul oscuro institucional */
+  color: #fff;
+  border-color: #0A192F;
+}
+
+/* =============================
+   CTA FINAL DE LA PÁGINA
+   ============================= */
+.cta {
+  background-color: #0A192F;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cta h2 {
   color: white;
-  border-color: #25D366;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
-.vehiculo-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+.btn-cta {
+  display: inline-block;
+  background-color: #DC3545;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
-.vehiculo-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+.btn-cta:hover {
+  background-color: #0A192F;
+  color: white;
 }
+
+/* Botón de WhatsApp unificado */
+.whatsapp-btn {
+  background-color: #B80018; /* Rojo institucional */
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.whatsapp-btn i {
+  font-size: 1.3rem;
+}
+
+.whatsapp-btn:hover {
+  background-color: #0057B8; /* Azul oscuro al pasar mouse */
+  transform: translateY(-2px);
+  color: #fff;
+  text-decoration: none;
+}
+.seccion-contacto {
+  background-color: #f5f5f5;
+}
+
+.titulo-seccion {
+  color: #0A192F;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.formulario-contacto {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', sans-serif;
+}
+
+.formulario-contacto .form-label {
+  font-weight: 500;
+  color: #2E2E2E;
+}
+
+.formulario-contacto .form-control {
+  border-radius: 0.5rem;
+}
+
+.btn-enviar {
+  background-color: #e63946;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-enviar:hover {
+  background-color: #c5303b;
+}
+
+.link-terminos {
+  color: #e63946;
+  text-decoration: underline;
+}
+
+.info-contacto {
+  font-family: 'Inter', sans-serif;
+}
+
+.info-contacto h5 {
+  color: #0A192F;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.info-contacto p {
+  color: #2E2E2E;
+}
+
+
+
+
 
 
 

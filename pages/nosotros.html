@@ -6,14 +6,14 @@
   <title>Nosotros | D'EMI AUTOMOTRIZ</title>
   <meta name="description" content="Conoce la historia, misión y valores de D'EMI Automotriz. Somos una empresa en Huánuco comprometida con el cuidado profesional de tu vehículo.">
   
-  <!-- Google Fonts y Bootstrap -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Fuentes y Estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  
-  <!-- Estilos -->
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -21,10 +21,16 @@
   <div id="navbar-container"></div>
 
   <!-- CONTENIDO PRINCIPAL -->
-  <section class="py-5 bg-light">
+  <section class="intro-nosotros">
   <div class="container">
-    <h1 class="text-primary fw-bold mb-4 text-center">Sobre Nosotros</h1>
-    <p class="lead text-center mb-5">
+    <h2 class="frase-institucional">"Más que un taller, una familia comprometida con tu seguridad y confianza."</h2>
+  </div>
+</section>
+
+<section class="nosotros-section py-5 bg-light">
+  <div class="container">
+    <h1 class="titulo-nosotros text-center fw-bold mb-4">Sobre Nosotros</h1>
+    <p class="descripcion-nosotros lead text-center mb-5">
       D'EMI Automotriz es una empresa huanuqueña con sólida experiencia en el sector automotriz.
       Desde nuestros inicios, hemos trabajado con compromiso, calidad y pasión para garantizar el óptimo funcionamiento
       de los vehículos de nuestros clientes.
@@ -36,58 +42,136 @@
         <img src="../assets/img/taller1.jpg" alt="Nuestro Taller" class="img-fluid rounded shadow-sm w-100">
       </div>
       <div class="col-md-6 mt-4 mt-md-0">
-        <h3 class="fw-bold">🚗 Misión</h3>
-        <p>Brindar soluciones automotrices integrales con tecnología moderna, talento humano calificado y atención personalizada, asegurando la satisfacción total de nuestros clientes.</p>
+        <h3 class="subtitulo-nosotros">🚗 Misión</h3>
+        <p class="texto-nosotros">
+          Brindar soluciones automotrices integrales con tecnología moderna, talento humano calificado y atención personalizada,
+          asegurando la satisfacción total de nuestros clientes.
+        </p>
       </div>
     </div>
 
     <!-- Visión -->
     <div class="row mb-4 align-items-center flex-md-row-reverse servicio-hover bg-white p-3 rounded-4">
       <div class="col-md-6">
-        <img src="../assets/img/banner.jpg" alt="Valores Corporativos" class="img-fluid rounded shadow-sm w-100">
+        <img src="../assets/img/banner.jpg" alt="Visión" class="img-fluid rounded shadow-sm w-100">
       </div>
       <div class="col-md-6 mt-4 mt-md-0">
-        <h3 class="fw-bold">🌟 Visión</h3>
-        <p>Ser la empresa líder en servicios automotrices en Huánuco, destacando por nuestra innovación, profesionalismo y compromiso con la excelencia.</p>
+        <h3 class="subtitulo-nosotros">🌟 Visión</h3>
+        <p class="texto-nosotros">
+          Ser la empresa líder en servicios automotrices en Huánuco, destacando por nuestra innovación, profesionalismo y compromiso con la excelencia.
+        </p>
       </div>
     </div>
 
     <!-- Valores -->
-<div class="row mb-4 align-items-center servicio-hover bg-white p-3 rounded-4">
-  <div class="col-md-6">
-    <img src="../assets/img/banner.jpg" alt="Nuestros Valores" class="img-fluid rounded shadow-sm w-100">
+    <div class="row mb-4 align-items-center servicio-hover bg-white p-3 rounded-4">
+      <div class="col-md-6">
+        <img src="../assets/img/banner.jpg" alt="Nuestros Valores" class="img-fluid rounded shadow-sm w-100">
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <h3 class="subtitulo-nosotros">💡 Nuestros Valores</h3>
+        <ul class="valores-nosotros mb-0">
+          <li>✔️ Responsabilidad y ética profesional</li>
+          <li>✔️ Innovación y mejora continua</li>
+          <li>✔️ Confianza y transparencia</li>
+          <li>✔️ Compromiso con la seguridad vial</li>
+          <li>✔️ Respeto al cliente y al medio ambiente</li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="col-md-6 mt-4 mt-md-0">
-    <h3 class="fw-bold">💡 Nuestros Valores</h3>
-    <ul class="mb-0">
-      <li>✔️ Responsabilidad y ética profesional</li>
-      <li>✔️ Innovación y mejora continua</li>
-      <li>✔️ Confianza y transparencia</li>
-      <li>✔️ Compromiso con la seguridad vial</li>
-      <li>✔️ Respeto al cliente y al medio ambiente</li>
-    </ul>
-  </div>
-</div>
-
 </section>
+
+
+<section class="historia bg-white py-5" data-aos="fade-up">
+  <div class="container">
+    <h2 class="titulo-nosotros text-center mb-5">🔧 Nuestra Historia</h2>
+    <div class="linea-tiempo">
+      <div class="evento" data-aos="fade-right" data-aos-delay="100">
+        <div class="icono-evento">🛠️</div>
+        <div>
+          <span class="año">2015</span>
+          <p>Fundación de D’EMI Automotriz con una visión clara de innovación en Huánuco.</p>
+        </div>
+      </div>
+      <div class="evento" data-aos="fade-left" data-aos-delay="200">
+        <div class="icono-evento">⚙️</div>
+        <div>
+          <span class="año">2018</span>
+          <p>Ampliación de servicios técnicos especializados en mecánica y electricidad.</p>
+        </div>
+      </div>
+      <div class="evento" data-aos="fade-right" data-aos-delay="300">
+        <div class="icono-evento">💻</div>
+        <div>
+          <span class="año">2023</span>
+          <p>Implementación de tecnología de diagnóstico computarizado y expansión digital.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="impacto-local" data-aos="fade-up">
+  <div class="container text-center">
+    <div class="icono-impacto mb-3">
+      <img src="../assets/img/icono-impacto.svg" alt="Icono comunidad" class="img-icono">
+    </div>
+    <h2 class="titulo-nosotros">Impacto en la Comunidad</h2>
+    <p class="descripcion-nosotros mt-3 mb-5">
+      Desde nuestros inicios, D’EMI Automotriz ha impulsado el desarrollo económico local mediante la generación de empleo y formación técnica para jóvenes huanuqueños.<br>
+      Apostamos por el talento regional y el crecimiento sostenible, ofreciendo oportunidades y contribuyendo activamente a la seguridad vial en nuestra ciudad.
+    </p>
+
+    <!-- Tarjetas de impacto -->
+    <div class="row justify-content-center text-center">
+      <div class="col-md-3 mb-4">
+        <div class="tarjeta-impacto" data-aos="zoom-in">
+          <i class="bi bi-people-fill icono-tarjeta"></i>
+          <h3 class="numero-impacto">+150</h3>
+          <p class="texto-impacto">Empleos generados</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="tarjeta-impacto" data-aos="zoom-in" data-aos-delay="100">
+          <i class="bi bi-mortarboard-fill icono-tarjeta"></i>
+          <h3 class="numero-impacto">+90</h3>
+          <p class="texto-impacto">Jóvenes capacitados</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="tarjeta-impacto" data-aos="zoom-in" data-aos-delay="200">
+          <i class="bi bi-calendar-check-fill icono-tarjeta"></i>
+          <h3 class="numero-impacto">9</h3>
+          <p class="texto-impacto">Años de impacto</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="tarjeta-impacto" data-aos="zoom-in" data-aos-delay="300">
+          <i class="bi bi-tools icono-tarjeta"></i>
+          <h3 class="numero-impacto">+25</h3>
+          <p class="texto-impacto">Talleres comunitarios</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
   <!-- FOOTER -->
   <div id="footer-container"></div>
 
   <!-- SCRIPTS -->
-   <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
-  <!-- Botones flotantes -->
-<div class="floating-buttons">
-  <a href="https://wa.me/51987654321" class="btn-floating bg-success text-white" target="_blank" aria-label="WhatsApp">
-    <i class="bi bi-whatsapp"></i>
-  </a>
-  <a href="https://www.facebook.com/tupagina" class="btn-floating bg-primary text-white" target="_blank" aria-label="Facebook">
-    <i class="bi bi-facebook"></i>
-  </a>
-</div>
+
+  
 
 </body>
 </html>

@@ -31,7 +31,42 @@
 
 <body>
 <!-- Contenedor donde se cargará el header automáticamente -->
-<div id="navbar-container"></div>
+<header>
+  <!-- HEADER / NAVBAR GLOBAL -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-navbar py-3 shadow-sm" data-aos="fade-down">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="../index.html">
+      <img src="../assets/img/logo.png" alt="D'EMI Automotriz" height="48" class="me-2">
+      <span class="align-middle"></span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav gap-2">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/vehiculos.html">Vehículos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</header>
 
 
 <!-- Sección Hero: Presentación principal -->
@@ -294,7 +329,33 @@
 </section> <!-- 👈 AQUÍ EL CIERRE FALTANTE -->
 
   
-<div id="footer-container"></div>
+<footer style="background-color: #0A192F; color: #fff; padding: 2rem 0 1rem 0; margin: 0;">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-center text-md-start px-3">
+    
+    <div>
+      <p class="mb-1 fw-semibold">&copy; 2025 D'EMI AUTOMOTRIZ</p>
+      <p class="mb-0">Corporación Automotriz EMI EIRL</p>
+    </div>
+
+    <ul class="list-unstyled d-flex gap-4 mb-0 justify-content-center align-items-center">
+      <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+      <li><a href="pages/servicios.html" class="text-white text-decoration-none">Servicios</a></li>
+      <li><a href="pages/contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+      <li><a href="pages/nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+    </ul>
+
+    <div class="d-flex align-items-center gap-2">
+      <span>Síguenos:</span>
+      <a href="https://facebook.com" target="_blank" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+      <a href="https://wa.me/51999999999" target="_blank" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <div class="text-center mt-3" style="font-size: 0.85rem;">
+    Desarrollado por <strong><a href="https://softline.com" target="_blank" class="text-danger text-decoration-none">Softline Estudio</a></strong>
+  </div>
+</footer>
 
 
 
